@@ -7,13 +7,25 @@ html,body{
 p{
   font-weight: 800;
   font-family: 'Shadows Into Light Two', cursive;
-  font-size: medium;
+  font-size: large;
   text-align: center;
 }
-#sidebar{
+h3,h4{
+  font-weight: 800;
+  font-family: 'Shadows Into Light Two', cursive;
+  text-align: center;
+}
+#top-bar{
     padding-top: 2%;
+    padding-bottom: 2%;
     text-align:center;
     background: #fff7ff !important;
+}
+#projects{
+  width:100%;
+  margin:0;
+  background-color:#d1c4e9;
+  padding:3%;
 }
 
 .headshot{
@@ -30,19 +42,19 @@ p{
   background: #b39ddb;
   padding:20px;
 }
-.btn-group-sidebar{
+#btn-group{
   width:85%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
-.skills{
+#skills{
   padding: 3%;
 }
 #main{
   width:100%;
   margin:0;
   background-color:#d1c4e9;
-  padding:3%;
+  padding:4%;
 }
 #myProgress {
   width: 100%;
