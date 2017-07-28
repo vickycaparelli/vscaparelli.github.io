@@ -5,42 +5,60 @@ html,body{
   padding:0;
 }
 p{
-  font-weight: 800;
-  font-family: 'Shadows Into Light Two', cursive;
-  font-size: large;
+  font-family: 'Roboto Mono', monospace;
+  color: #fafafa;
+  font-size: medium;
+  text-align: left;
+}
+
+.thumb-text{
+  font-family: 'Roboto Mono', monospace;
+  color: #000000;
+  font-size: medium;
+  text-align: left;
+}
+
+.skills-titles{
+  color:#000000;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
 }
-h3,h4{
-  font-weight: 800;
-  font-family: 'Shadows Into Light Two', cursive;
+.proj-titles{
+  color: #fafafa;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
 }
 #top-bar{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    text-align:center;
-    background: #fff7ff !important;
+  padding-top: 6%;
+  padding-bottom: 2%;
+  text-align:center;
+  background: #eceff1 !important;
 }
 #projects{
   width:100%;
+  color:#fafafa;
   margin:0;
-  background-color:#d1c4e9;
+  background-color:#263238;
   padding:3%;
 }
 
 .headshot{
-  width: 10%;
-  height: 10%;
+  width: 13%;
+  height: 13%;
 }
 .title{
-  color:#4a148c;
+  color:#000000;
   font-weight: 300;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Roboto Slab', serif;
   width:100%;
 }
-.social-bar{
-  background: #b39ddb;
-  padding:20px;
+#social-bar{
+  display: block;
+  text-align: center;
+  padding: 2%;
+  background: #000a12;
 }
 #btn-group{
   width:85%;
@@ -48,23 +66,19 @@ h3,h4{
   padding-bottom: 4%;
 }
 #skills{
-  padding: 3%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  text-align: center;
+  background: #eceff1 !important;
 }
 #main{
   width:100%;
   margin:0;
-  background-color:#d1c4e9;
-  padding:4%;
-}
-#myProgress {
-  width: 100%;
-  background-color: #ddd;
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: #4CAF50;
+  background-color:#263238;
+  padding-top:5%;
+  padding-bottom:5%;
+  padding-left:10%;
+  padding-right:6%;
 }
 #footer{
   /*clear:both;*/
@@ -72,5 +86,68 @@ h3,h4{
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #a094b7;
+  background-color: #000a12;
+}
+
+#myTopnav{
+  position:fixed;
+  height:auto;
+  top:0;
+  width: 100%;
+  z-index: 9;
+}
+.menu{
+  font-weight: 800;
+  font-family: 'Roboto Slab', serif;
+  background: #000a12;
+  color:#fff7ff !important;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+    background-color:#ff7043 !important;
+  }
+
+.myProgress {
+  width: 50%;
+  border-radius: 3px;
+  background-color: #ddd;
+  margin-left: 25%;
+  margin-bottom: 2%;
+
+}
+
+.myBar {
+  width: 60%;
+  font-weight: 500;
+  height: 35px;
+  border-radius: 3px;
+  text-align:center;
+  font-family: 'Roboto Mono', monospace;
+  color:white;
+}
+
+#toogleCon{
+  visibility:hidden;
+}
+
+@media all and (max-width: 750px){
+    #navcontainer{
+        display: inline-block;
+        float:none;
+    }
+    #toogleCon{
+      visibility:visible;
+    }
+
+    .myProgress {
+      width: 70%;
+      margin-left:15%;
+    }
+}
+
+@media all and (max-width: 350px){
+    .myProgress {
+      width: 100%;
+      margin-left:0%;
+    }
+
 }

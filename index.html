@@ -4,11 +4,27 @@
     <meta charset="utf-8">
     <title>Victoria Caparelli Porfolio</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light|Shadows+Into+Light+Two" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab" rel="stylesheet">
   </head>
   <body>
-     <div id="top-bar">
+    <div id="myTopnav" class="topnav">
+      <nav id="navcontainer" class="navbar menu">
+         <div class="container-fluid">
+             <div class="navbar-header">
+               <a class="navbar-brand ancla" data-ancla="top-bar" href="#"><span id="resumeIcon" class="fa fa-user-circle "  aria-hidden="true" style="color:white;">  Resume</span></a>
+             </div>
+             <ul class="nav navbar-nav">
+               <li class="ancla" data-ancla="skills"><a class="menu" href="#"><span id="skillsIcon" class="fa fa-cogs fa-2x"  aria-hidden="true" style="color:white;font-size:medium">  Skills</span></a></li>
+               <li class="ancla" data-ancla="projects"><a class="menu" href="#"><span id="projIcon" class="fa fa-folder-open fa-2x"  aria-hidden="true" style="color:white;font-size:medium">  Projects</span></a></li>
+             </ul>
+             <span id="toogleCon" class="fa fa-bars fa-2x"  aria-hidden="true" style="color:white"></span></a>
+          </div>
+      </nav>
+    </div>
+    <div id="top-bar">
         <div class="frame-image">
           <img src="assets/profile-image.png" alt="Sorry, Pic Not Available" class="img-rounded img-responsive headshot center-block"/>
         </div>
@@ -17,67 +33,159 @@
           <h4 class="title text-center">Portfolio</h4>
         </div>
      </div>
-     <div class="social-bar container-fluid">
-          <p>SITE UNDER CONSTRUCTION</p>
-      </div>
-      <div id="btn-group" class="container-fluid">
-          <button class="btn btn-block btn-default ancla" data-ancla="main">Resume</button>
-          <button class="btn btn-block btn-default ancla" data-ancla="skills">Skills</button>
-          <button class="btn btn-block btn-default ancla" data-ancla="projects">Projects</button>
-      </div>
-      <div id="main" class="well container-fluid">
+     <div id="social-bar" class="container-fluid">
+       <div class="contact">
+         <a href="https://www.linkedin.com/in/victoria-sol-caparelli-61194860/" target="_blank" alt="Linkedin Account"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:white"></i></a>
+         <a href="https://github.com/vscaparelli" target="_blank" title="Github"  alt="GitHub Account"><i class="fa fa-github fa-2x" aria-hidden="true" style="color:white"></i></a>
+         <a href="https://www.freecodecamp.org/vscaparelli" target="_blank"  alt="freeCodeCamp Account"><i class="fa fa-free-code-camp fa-2x" aria-hidden="true" style="color:white"></i></a>
+         <a href="https://codepen.io/vscaparelli/" target="_blank" title="Codepen"  alt="CodePen Account"><i class="fa fa-codepen fa-2x" aria-hidden="true" style="color:white"></i></a>
+       </div>
+     </div>
+     <div id="main" class="container">
         <div>
-          <p>Curious soon-to-graduate IT Engineering student, mostly interested in Software Engineering.</p>
+          <p>I'm a curious soon-to-graduate IT Engineering student, mostly interested in Software Engineering.</p>
           <p>I like being part of projects that represent a challenge and involve the use of a wide variety of techonologies.</p>
           <p>1+ years of experience developing Apps and Websites for non-proffit organizations and small businesses.</p>
           <p>1+ years of experience giving introductory programming classes of languages such as Java and Python.</p>
           <p>Always looking for new opportunities to learn.</p>
+          <p>If you want to contact me check the bar above.</p>
         </div>
       </div>
       <div id="skills" class="container-fluid">
-        <h3 class="text-center">Skills</h3>
-        <h4 class="text-center">Programming Languages</h4>
-        <div class="progress center-block" style="width:80%;">
-            <div class="progress-bar progress-bar-striped active bar col-sm-6" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width:60%">
-                    <p class="text-center">HTML+CSS</p>
-            </div>
-        </div>
-        <div class="progress center-block" style="width:80%;">
-            <div class="progress-bar progress-bar-info progress-bar-striped active bar col-sm-6"  aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width:70%">
-                    <p class="text-center">Java</p>
-            </div>
-        </div>
-        <div class="progress center-block" style="width:80%;">
-            <div class="progress-bar progress-bar-success progress-bar-striped active bar col-sm-6"  aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width:40%">
-                    <p class="text-center">Python</p>
-            </div>
-        </div>
-        <div class="progress center-block" style="width:80%;">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active bar col-sm-6" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width:30%">
-                    <p class="text-center">Javascript</p>
-            </div>
-        </div>
+        <h3 class="text-center skills-titles">Skills</h3>
+        <h4 class="text-center skills-titles">Programming Languages</h4>
+        <div class="myProgress center-block"><div id="myBarHTML" class="myBar">HTML-CSS</div></div>
+        <div class="myProgress center-block"><div id="myBarPython" class="myBar">Python</div></div>
+        <div class="myProgress center-block"><div id="myBarJava" class="myBar">Java</div></div>
+        <div class="myProgress center-block"><div id="myBarJavascript" class="myBar">Javascript</div></div>
+        <br />
+        <h4 class="text-center skills-titles">Frameworks, Libraries & Others</h4>
+        <div class="myProgress center-block"><div id="myBarBoot" class="myBar">Bootstrap</div></div>
+        <div class="myProgress center-block"><div id="myBarGit" class="myBar">Git/GitHub</div></div>
+        <div class="myProgress center-block"><div id="myBarJQuery" class="myBar">JQuery</div></div>
       </div>
-      <div id="projects" class="well container-fluid">
-        <div>
+      <div id="projects" class="container-fluid">
           <h3 class="text-center">Non-Proffit projects</h3>
-          <h4 class="text-center">CRUD System For A Communitary Pharmacy Using Java</h4>
-          <h4 class="text-center">Website Design For A Tutoring Network Organization</h4>
-        </div>
-        <div>
+          <div class="row">
+             <div class="col-md-4">
+               <div class="thumbnail">
+                 <a href="/w3images/lights.jpg" target="_blank">
+                   <img src="assets/java-sys.jpg" alt="CRUD System Caption" style="width:100%;height:50%;">
+                   <div class="caption">
+                     <p class="thumb-text">CRUD System For A Communitary Pharmacy Using Java</p>
+                   </div>
+                 </a>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="thumbnail">
+                 <a href="/w3images/nature.jpg" target="_blank">
+                   <img src="/w3images/nature.jpg" alt="Website Caption" style="width:100%">
+                   <div class="caption">
+                     <p class="thumb-text">Website Design For A Tutoring Network Organization</p>
+                   </div>
+                 </a>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="thumbnail">
+                 <a href="/w3images/nature.jpg" target="_blank">
+                   <img src="/w3images/nature.jpg" alt="Website Caption" style="width:100%">
+                   <div class="caption">
+                     <p class="thumb-text">Website Design For A Tutoring Network Organization</p>
+                   </div>
+                 </a>
+               </div>
+             </div>
+            </div>
           <h3 class="text-center">FreeCodeCamp Challenges/Miscellaneous</h3>
-          <a href="https://www.freecodecamp.org"><p >More about FreeCodeCamp.</p></a>
-        </div>
+          <a href="https://www.freecodecamp.org" target="_blank"><p class="text-center">More about FreeCodeCamp.</p></a>
+          <div class="row">
+             <div class="col-md-4">
+               <div class="thumbnail">
+                 <a href="https://codepen.io/vscaparelli/full/prvoqd/" target="_blank">
+                   <img src="assets/tribute.png" alt="WebPage Caption" style="width:100%">
+                   <div class="caption">
+                     <p class="thumb-text">Tribute Webpage using Bootstrap</p>
+                   </div>
+                 </a>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="thumbnail">
+                 <a href="https://github.com/vscaparelli/Movie-Trailer-Website.git" target="_blank">
+                   <img src="assets/movie-web.png" alt="Movie Trailer Website Caption" style="width:100%">
+                   <div class="caption">
+                     <p class="thumb-text">Movie Trailer Website Design using Python and Bootstrap</p>
+                   </div>
+                 </a>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="thumbnail">
+                 <a href="/w3images/fjords.jpg" target="_blank">
+                   <img src="/w3images/fjords.jpg" alt="Caption" style="width:100%">
+                   <div class="caption">
+                     <p>Lorem ipsum...</p>
+                   </div>
+                 </a>
+               </div>
+             </div>
+          </div>
       </div>
       <footer id="footer">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </footer>
+
+
+      <!--SCRIPTS-->
+      <div class="foot">
+        <!--Scrolling between elements of the page-->
         <script type = "text/javascript">
           $('.ancla').on('click', function(e){
             e.preventDefault();
             var strAncla = '#' + $(this).data('ancla');
-            $('html,body').animate({scrollTop: $(strAncla).offset().top}, 2000);
+            $('html,body').stop(true,true).animate({scrollTop: $(strAncla).offset().top}, 2000);
           });
         </script>
-      </footer>
+        <!--Creating bars-->
+        <script type = "text/javascript">
+            $(document).ready(function() {
+              checkSize();
+
+              $("#myBarHTML").css({'background-color':'#9fa8da','width':'50%'});
+              $("#myBarPython").css({'background-color':'#7986cb','width':'50%'});
+              $("#myBarJava").css({'background-color':'#5c6bc0','width':'60%'});
+              $("#myBarJavascript").css({'background-color':'#3f51b5','width':'30%'});
+              $("#myBarBoot").css({'background-color':'#4db6ac','width':'60%'});
+              $("#myBarGit").css({'background-color':'#26a69a','width':'70%'});
+              $("#myBarJQuery").css({'background-color':'#009688','width':'30%'});
+
+              $(window).resize(checkSize);
+            });
+
+            function checkSize(){
+                if ($("#navcontainer").css("display") == "inline-block" ){
+                    $("#projIcon").text("");
+                    $("#skillsIcon").text("");
+                    $("#resumeIcon").text("");
+                }else{
+                    $("#projIcon").text(" Projects");
+                    $("#skillsIcon").text(" Skills");
+                    $("#resumeIcon").text(" Resume");
+                }
+            }
+
+            $("#toogleCon").click(function(){
+                if($(".navbar-header").is(':visible') ){
+                    $(".navbar-header").hide();
+                    $(".navbar-nav").hide();
+                }else{
+                    $(".navbar-header").show();
+                    $(".navbar-nav").show();
+                }
+
+            });
+        </script>
+      </div>
   </body>
 </hmtl>
