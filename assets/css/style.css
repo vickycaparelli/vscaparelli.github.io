@@ -129,6 +129,10 @@ p{
   visibility:hidden;
 }
 
+.thum-pers{
+  height: 500px;
+}
+
 @media all and (max-width: 750px){
     #navcontainer{
         display: inline-block;
