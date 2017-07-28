@@ -7,7 +7,7 @@ html,body{
 p{
   font-family: 'Roboto Mono', monospace;
   color: #fafafa;
-  font-size: medium;
+  font-size: large;
   text-align: left;
 }
 
@@ -153,5 +153,11 @@ p{
       width: 100%;
       margin-left:0%;
     }
+
+    p{
+      font-size: medium;
+
+    }
+
 
 }
