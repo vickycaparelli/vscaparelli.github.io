@@ -8,7 +8,7 @@ p{
   font-family: 'Roboto Mono', monospace;
   color: #fafafa;
   font-size: large;
-  text-align: left;
+  text-align: justify;
 }
 
 .thumb-text{
@@ -20,7 +20,7 @@ p{
 
 .skills-titles{
   color:#000000;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Roboto Slab', serif;
   text-align: center;
 }
@@ -77,8 +77,8 @@ p{
   background-color:#263238;
   padding-top:5%;
   padding-bottom:5%;
-  padding-left:10%;
-  padding-right:6%;
+  padding-left:8%;
+  padding-right:8%;
 }
 #footer{
   /*clear:both;*/
@@ -117,7 +117,7 @@ p{
 
 .myBar {
   width: 60%;
-  font-weight: 500;
+  font-weight: 600;
   height: 35px;
   border-radius: 3px;
   text-align:center;
@@ -156,7 +156,7 @@ p{
 
     p{
       font-size: medium;
-
+      text-align: left;
     }
 
 
