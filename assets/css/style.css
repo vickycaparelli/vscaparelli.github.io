@@ -10,25 +10,36 @@ p{
   font-size: large;
   text-align: justify;
 }
-
-.thumb-text{
-  font-family: 'Roboto Mono', monospace;
+video{
+  width:40%;
+  float:left;
+}
+.proj-title{
+  font-family: 'Ubuntu', sans-serif;
   color: #000000;
-  font-size: medium;
   text-align: left;
 }
-
-.skills-titles{
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+.main-titles{
   color:#000000;
   font-weight: 400;
   font-family: 'Roboto Slab', serif;
   text-align: center;
 }
-.proj-titles{
-  color: #fafafa;
-  font-weight: 300;
+.main2-titles{
+  color:#fafafa;
+  font-weight: 400;
   font-family: 'Roboto Slab', serif;
   text-align: center;
+}
+.thumb-text{
+  color: #000000;
+  font-size: small;
+  font-family: 'Roboto Slab', serif;
 }
 #top-bar{
   padding-top: 6%;
@@ -40,19 +51,12 @@ p{
   width:100%;
   color:#fafafa;
   margin:0;
-  background-color:#263238;
+  background-color:#0d47a1;
   padding:3%;
 }
 
-.headshot{
-  width: 13%;
-  height: 13%;
-}
-.title{
-  color:#000000;
-  font-weight: 300;
-  font-family: 'Roboto Slab', serif;
-  width:100%;
+.thumbnail{
+  background: #bdbdbd;
 }
 #social-bar{
   display: block;
@@ -74,7 +78,7 @@ p{
 #main{
   width:100%;
   margin:0;
-  background-color:#263238;
+  background-color:#0d37a1;
   padding-top:5%;
   padding-bottom:5%;
   padding-left:9%;
@@ -140,6 +144,9 @@ p{
     }
     #toogleCon{
       visibility:visible;
+    }
+    video{
+      width: 90%
     }
 
     .myProgress {
