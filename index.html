@@ -186,7 +186,7 @@
             $('html,body').stop(true,true).animate({scrollTop: $(strAncla).offset().top}, 2000);
           });
         </script>
-        <!--Creating bars-->
+        <!--Create bars and resize navbar-->
         <script type = "text/javascript">
             $(document).ready(function() {
               checkSize();
@@ -203,7 +203,7 @@
               $("#myBarIl").css({'background-color':'#0288d1','width':'15%'});
               $(window).resize(checkSize);
             });
-          <!--Resize Navbar-->
+     
             function checkSize(){
                 if ($("#navcontainer").css("display") == "inline-block" ){
                     $("#projIcon").text("");
