@@ -12,8 +12,9 @@ p{
 }
 
 video{
-  width:20%;
-  float:left;
+  width:35%;
+  padding-top:7%;
+  padding-left:3%;
 }
 
 .proj-title{
@@ -139,7 +140,7 @@ margin-top:20px;
   height: 500px;
 }
 
-@media all and (max-width: 750px){
+@media all and (max-width: 768px){
     #navcontainer{
         display: inline-block;
         float:none;
@@ -149,8 +150,8 @@ margin-top:20px;
     }
   
     video{
-      width:70%;
-      float:left;
+      width:60%;
+      padding-left:25%;
     }
 
     .myProgress {
@@ -165,8 +166,8 @@ margin-top:20px;
       margin-left:0%;
     }
     video{
-      width: 50%;
-      float:none;
+      width: 100%;
+      float:inherit;
     }
 
     p{
