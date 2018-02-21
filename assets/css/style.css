@@ -11,6 +11,11 @@ p{
   text-align: justify;
 }
 
+video{
+  width:40%;
+  float:left;
+}
+
 .proj-title{
   font-family: 'Ubuntu', sans-serif;
   color: #000000;
@@ -144,7 +149,7 @@ margin-top:20px;
     }
   
     video{
-      width:40%;
+      width:70%;
       float:left;
     }
 
@@ -160,7 +165,7 @@ margin-top:20px;
       margin-left:0%;
     }
     video{
-      width: 60%;
+      width: 50%;
       float:none;
     }
 
