@@ -11,48 +11,60 @@ p{
   text-align: justify;
 }
 
-.thumb-text{
-  font-family: 'Roboto Mono', monospace;
+img{
+  width:45%;
+
+}
+.proj-title{
+  font-family: 'Ubuntu', sans-serif;
   color: #000000;
-  font-size: medium;
   text-align: left;
 }
-
-.skills-titles{
+.title{
+  color:#fbf8f8;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+.hide-bullets {
+  list-style:none;
+  margin-left: -40px;
+  margin-top:20px;
+}
+.main-titles{
   color:#000000;
   font-weight: 400;
   font-family: 'Roboto Slab', serif;
   text-align: center;
 }
-.proj-titles{
-  color: #fafafa;
-  font-weight: 300;
+.main2-titles{
+  color:#fafafa;
+  font-weight: 400;
   font-family: 'Roboto Slab', serif;
   text-align: center;
 }
+.thumb-text{
+  color: #000000;
+  font-size: small;
+  font-family: 'Roboto Slab', serif;
+}
 #top-bar{
-  padding-top: 6%;
-  padding-bottom: 2%;
+  float:left;
+  padding-top: 4%;
+  padding-bottom: 4%;
   text-align:center;
-  background: #eceff1 !important;
+  background: #0d37a1 !important;
 }
 #projects{
   width:100%;
   color:#fafafa;
   margin:0;
-  background-color:#263238;
+  background-color:#0d47a1;
   padding:3%;
 }
 
-.headshot{
-  width: 13%;
-  height: 13%;
-}
-.title{
-  color:#000000;
-  font-weight: 300;
-  font-family: 'Roboto Slab', serif;
-  width:100%;
+.thumbnail{
+  background: #bdbdbd;
 }
 #social-bar{
   display: block;
@@ -74,9 +86,9 @@ p{
 #main{
   width:100%;
   margin:0;
-  background-color:#263238;
-  padding-top:5%;
-  padding-bottom:5%;
+  background-color:#0d37a1;
+  padding-top:6%;
+  padding-bottom:3%;
   padding-left:9%;
   padding-right:8%;
 }
@@ -133,7 +145,7 @@ p{
   height: 500px;
 }
 
-@media all and (max-width: 750px){
+@media all and (max-width: 768px){
     #navcontainer{
         display: inline-block;
         float:none;
@@ -141,7 +153,7 @@ p{
     #toogleCon{
       visibility:visible;
     }
-
+  
     .myProgress {
       width: 70%;
       margin-left:15%;
