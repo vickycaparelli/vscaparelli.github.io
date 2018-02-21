@@ -12,11 +12,11 @@ p{
 }
 
 img{
-  width:55%;
+  width:80%;
 
 }
 .text-block{
-  padding-top:3%;
+  padding-top:2%;
 }
 .proj-title{
   font-family: 'Ubuntu', sans-serif;
@@ -53,8 +53,9 @@ img{
 }
 #top-bar{
   float:left;
-  padding-top: 3%;
-  padding-right:5%;
+  padding-top: 6%;
+  padding-right:4%;
+  padding-bottom:5%;
   text-align:center;
   background: #0d37a1 !important;
 }
@@ -161,9 +162,14 @@ img{
       width: 70%;
       margin-left:15%;
     }
+     #top-bar{
+      float:none;
+      padding-right:0%;
+    }
 }
 
-@media all and (max-width: 350px){
+
+@media all and (max-width: 360px){
     .myProgress {
       width: 100%;
       margin-left:0%;
@@ -173,10 +179,9 @@ img{
       font-size: medium;
       text-align: left;
     }
+
     #top-bar{
+      float:none;
       padding-right:0%;
-      text-align:left;
     }
-
-
 }
