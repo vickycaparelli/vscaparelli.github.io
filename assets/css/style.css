@@ -17,6 +17,7 @@ img{
 }
 .text-block{
   padding-top:2%;
+  padding-bottom:2%;
 }
 .proj-title{
   font-family: 'Ubuntu', sans-serif;
@@ -53,8 +54,8 @@ img{
 }
 #top-bar{
   float:left;
-  padding-top: 6%;
-  padding-right:4%;
+  padding-top: 8%;
+  padding-right:10%;
   padding-bottom:5%;
   text-align:center;
   background: #0d37a1 !important;
@@ -183,5 +184,11 @@ img{
     #top-bar{
       float:none;
       padding-right:0%;
+      padding-top: 6%;
+      padding-bottom:3%;
+    }
+
+    img{
+      width:70%;
     }
 }
