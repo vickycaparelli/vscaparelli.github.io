@@ -10,10 +10,7 @@ p{
   font-size: large;
   text-align: justify;
 }
-video{
-  width:40%;
-  float:left;
-}
+
 .proj-title{
   font-family: 'Ubuntu', sans-serif;
   color: #000000;
@@ -145,8 +142,10 @@ margin-top:20px;
     #toogleCon{
       visibility:visible;
     }
+  
     video{
-      width: 60%
+      width:40%;
+      float:left;
     }
 
     .myProgress {
@@ -159,6 +158,10 @@ margin-top:20px;
     .myProgress {
       width: 100%;
       margin-left:0%;
+    }
+    video{
+      width: 60%;
+      float:none;
     }
 
     p{
