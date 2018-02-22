@@ -12,13 +12,10 @@ p{
 }
 
 img{
-  width:80%;
+  width:17%;
 
 }
-.text-block{
-  padding-top:2%;
-  padding-bottom:2%;
-}
+
 .proj-title{
   font-family: 'Ubuntu', sans-serif;
   color: #000000;
@@ -53,10 +50,6 @@ img{
   font-family: 'Roboto Slab', serif;
 }
 #top-bar{
-  float:left;
-  padding-top: 8%;
-  padding-right:10%;
-  padding-bottom:5%;
   text-align:center;
   background: #0d37a1 !important;
 }
@@ -158,15 +151,15 @@ img{
     #toogleCon{
       visibility:visible;
     }
-  
+
     .myProgress {
       width: 70%;
       margin-left:15%;
     }
-     #top-bar{
-      float:none;
-      padding-right:0%;
+    img{
+      width:45%;
     }
+
 }
 
 
@@ -179,13 +172,6 @@ img{
     p{
       font-size: medium;
       text-align: left;
-    }
-
-    #top-bar{
-      float:none;
-      padding-right:0%;
-      padding-top: 6%;
-      padding-bottom:3%;
     }
 
     img{

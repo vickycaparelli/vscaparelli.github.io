@@ -30,15 +30,13 @@
     </div>
     <div id="main" class="container">
      <div id="top-bar">
-        <div class="frame-image">
-          <img src="assets/profile-image.png" alt="Sorry, Pic Not Available" class="img-rounded img-responsive headshot center-block"/>
+        <div>
+          <img src="assets/profile-image.jpg" alt="Sorry, Pic Not Available" class="img-rounded img-responsive headshot center-block"/>
         </div>
      </div>
-     <div class="text-block container-fluid">
+     <div class="container-fluid">
         <h3 class="text-center main2-titles">Resume</h3>
-        <br />
         <p>I'm a curious soon-to-graduate IT Engineering student, mostly interested in  Web Design & Software Engineering.</p>
-        <br />
         <p>I have academic experience developing Apps and Websites for non-profit organizations and small businesses.</p>
         <br />
         <p>Always looking for new opportunities to learn.</p>
@@ -197,7 +195,7 @@
               $("#myBarIl").css({'background-color':'#0288d1','width':'15%'});
               $(window).resize(checkSize);
             });
-     
+
             function checkSize(){
                 if ($("#navcontainer").css("display") == "inline-block" ){
                     $("#projIcon").text("");
